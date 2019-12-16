@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>examhtml</title>
+    <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Cormorant:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --terra:#D6C7C3;
+            --negre:#000000;
+        }
+        header h1{
+            font-family: 'Darker Grotesque', sans-serif;
+            font-size: 1.8em;
+            width: 70%;
+            text-align: justify;
+            hyphens: auto;
+            line-height: 1.4em;
+            color: var(--terra);
+            padding: 2em 2em;
+        }
+        header h2{
+            font-family: 'Cormorant', serif;
+            font-size: 13em;
+            width: 100%;
+            text-align: center;
+            hyphens: auto;
+            line-height: 1.2em;
+            color: var(--terra);
+            padding: 20px 20px;
+        }
+        /*MAIN*/
+        .container{
+            display: grid;
+            grid-template: repeat(2,1fr)/repeat(2,1fr);
+            grid-gap: 15px;
+            padding: 0 20px;
+        }
+        figure{
+            display: flex;
+            flex-direction: column;
+        }
+        /*FOOTER*/
+        footer{
+            padding: 2em 3em;
+            display: flex;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5em;
+        }
+        .col-1{
+            width: 50%;
+        }
+        .col-2{
+            width: 50%;
+        }
+        .menu{
+            text-align: right;
+            width: 100%;
+            font-weight: 700;
+            padding: 2em 2em;
+            font-family: 'Darker Grotesque', sans-serif;
+            font-size: 1.8em;
+        }
+        .menu a{
+            color: var(--terra);
+        }
+        .un{
+            overflow: hidden;
+        }
+        .un img{
+            opacity: 1;
+            transition: 2s opacity;
+        }
+        .un:hover img{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+    <body>
+        <nav class="navigation">
+       <div class="menu">
+            <a href="">Work</a>
+            <a href="">Inspo</a>
+            <a href="">About</a>
+        </div>
+        </nav>
+        <header>
+            <h1>We are a brand experience design company.  We partner with clients to help them connect with their audiences through outstanding products, experiences, and environments.  We do it through our unique design “with a point of view” approach.  We believe that enriching product experiences with a sense of style always delivers business results.</h1>
+            <h2>Dothings</h2>
+        <main class="container">
+        <figure>
+           <div class="un">
+            <img src="img/dothings.jpg" alt="">
+            </div>
+        </figure>
+        <figure>
+            <img src="img/vote.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="img/TomFord.gif" alt="">
+        </figure>
+        </main>
+        </header>
+        <footer>
+        <div class="col-1">
+            <p>61 Greenpoint Ave, Suite #306</p>
+            <p>Brooklyn, NY 11222</p>
+            <p>212 228 3328</p>
+            <a href="hello@dothingsnyc.com">hello@dothingsnyc.com</a>
+        </div>
+        <div class="col-2">
+            <p>Instagram</p>
+            <p>Linkedin</p>
+            <p> </p>
+            <p>©Dothings 2019</p>
+        </div>
+        </footer>
+    </body>
+</html>
+
+
